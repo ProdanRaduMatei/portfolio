@@ -261,7 +261,7 @@ export default function PortfolioPage() {
                 <div className="grid items-center gap-8 py-12 md:grid-cols-2">
                     <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="space-y-6">
                         <div className="inline-flex items-center gap-2 rounded-full border border-border/60 px-3 py-1 text-sm">
-                            <ShieldCheck className="h-4 w-4" /> AI & ML Master's Student • Builder • PM
+                            <ShieldCheck className="h-4 w-4" /> AI/ML Master's Student • Builder • PM
                         </div>
                         <h1 className="text-3xl font-semibold tracking-tight md:text-5xl">
                             Minimal UI. <span className="underline underline-offset-4 decoration-primary/50">Maximum engineering</span>.
