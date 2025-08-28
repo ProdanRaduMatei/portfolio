@@ -26,7 +26,7 @@ const HIGHLIGHTS: { label: string }[] = [
     { label: "Top 100 Kattis (RO top 3)" },
     { label: "Top 100 pbinfo (Cluj top 5)" },
     { label: "€40k investment for CyclinGo @ TV show" },
-    { label: "DPIIT Academy – 1st place (CyclinGo)" },
+    { label: "DPIT Academy – 1st place (CyclinGo)" },
     { label: "Innovation Labs semifinalist twice" },
 ];
 
@@ -352,11 +352,11 @@ export default function PortfolioPage() {
                 <div className="grid gap-6 md:grid-cols-3">
                     <div className="md:col-span-2 space-y-4 text-muted-foreground">
                         <p>
-                            I’m a Computer Science & Mathematics student building AI‑powered, production‑grade apps. I care about clean architecture,
+                            I’m a Computer Science & Mathematics graduate building AI‑powered, production‑grade apps. I care about clean architecture,
                             performance budgets, testing, and developer experience.
                         </p>
                         <p>
-                            I led teams, shipped products (mobile, web, embedded), and pitched in national competitions. I enjoy turning real constraints into elegant
+                            I led teams, shipped products (mobile, web, embedded), and pitched in international competitions. I enjoy turning real constraints into elegant
                             software.
                         </p>
                     </div>
@@ -366,8 +366,8 @@ export default function PortfolioPage() {
                             <CardDescription>Snapshot</CardDescription>
                         </CardHeader>
                         <CardContent className="text-sm text-muted-foreground space-y-2">
-                            <div>• Volunteer Angel – Academia „Descoperă‑ți pasiunea în IT”.</div>
-                            <div>• Hackathons: POLIHACK, Bosch FMC, Innovation Labs.</div>
+                            <div>• Volunteer Team Angel – Academia „Descoperă‑ți pasiunea în IT”.</div>
+                            <div>• Hackathons: Innovation Labs, Bosch FMC, POLIHACK.</div>
                             <div>• Speaking & writing: theses, articles, technical docs.</div>
                         </CardContent>
                     </Card>
