@@ -81,6 +81,44 @@ const PROJECTS: {
     description: string;
 }[] = [
     {
+        title: "End-to-End Encrypted Messenger",
+        slug: "e2e-encrypted-messenger",
+        year: "2026",
+        tagline: "Secure chat app with real end-to-end encryption and key exchange.",
+        badges: [
+            "Cryptography",
+            "E2EE",
+            "AES-GCM",
+            "X25519 / ECDH",
+            "HKDF",
+            "HMAC / Signatures",
+        ],
+        links: [
+            { label: "Monorepo", href: "https://github.com/ProdanRaduMatei/End-to-End-Encrypted-Mobile-Chat" },
+        ],
+        description:
+            "Built a secure messaging prototype with modern cryptographic primitives: ECDH key agreement, symmetric encryption, and authenticated messages. Focused on threat modeling, key derivation, and correct crypto usage (no custom primitives).",
+    },
+    {
+        title: "Software ML — Fraud Amount Modeling",
+        slug: "software-ml-decision-trees",
+        year: "2026",
+        tagline: "Decision Tree regression pipeline with cross-validation and robust metrics.",
+        badges: [
+            "Python",
+            "scikit-learn",
+            "Decision Trees",
+            "K-Fold CV",
+            "MAE / RMSE / R²",
+        ],
+        links: [
+            { label: "Code", href: "https://github.com/ProdanRaduMatei/ICA_Masters_UBB/tree/main/Sem1/ML/LaTeX%20template%20(lab%20assignment)/project" },
+            { label: "Document", href: "https://github.com/ProdanRaduMatei/ICA_Masters_UBB/blob/main/Sem1/ML/LaTeX%20template%20(lab%20assignment)/out/Assignment5.pdf" },
+        ],
+        description:
+            "Implemented an end-to-end ML workflow: preprocessing + log-transform, K-Fold cross-validation, and evaluation with MAE/RMSE/NRMSE/R². Tuned depth and leaf size to control overfitting and ensure stable generalization.",
+    },
+    {
         title: "FinWise AI",
         slug: "finwise-ai",
         year: "2025",
@@ -289,17 +327,49 @@ export default function PortfolioPage() {
                         <Card className="border-muted-foreground/10 bg-background/60 backdrop-blur">
                             <CardHeader className="space-y-1">
                                 <CardTitle className="flex items-center gap-2 text-2xl"><Brain className="h-5 w-5" /> Recent Work</CardTitle>
-                                <CardDescription>Two flagship apps shipped in 2025.</CardDescription>
+                                <CardDescription>Flagship products + security & ML work (2025).</CardDescription>
                             </CardHeader>
                             <CardContent className="space-y-4">
                                 <div className="space-y-1">
-                                    <div className="flex items-center gap-2 text-sm text-muted-foreground"><Globe className="h-4 w-4" /> FinWise AI</div>
-                                    <p className="text-sm">Portfolio assistant with LSTM predictions, news sentiment and transparent rationales.</p>
+                                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                                        <ShieldCheck className="h-4 w-4" /> End-to-End Encrypted App
+                                    </div>
+                                    <p className="text-sm">
+                                        ECDH key exchange, derived session keys, and authenticated encryption for secure messaging.
+                                    </p>
                                 </div>
+
                                 <Separator />
+
                                 <div className="space-y-1">
-                                    <div className="flex items-center gap-2 text-sm text-muted-foreground"><Boxes className="h-4 w-4" /> SeatSurfer</div>
-                                    <p className="text-sm">Hybrid workplace booking with AI seat recommendations and admin analytics.</p>
+                                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                                        <Cpu className="h-4 w-4" /> Software ML (Decision Trees)
+                                    </div>
+                                    <p className="text-sm">
+                                        Decision Tree regression with K-Fold CV and metrics (MAE/RMSE/R²) for stable performance.
+                                    </p>
+                                </div>
+
+                                <Separator />
+
+                                <div className="space-y-1">
+                                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                                        <Globe className="h-4 w-4" /> FinWise AI
+                                    </div>
+                                    <p className="text-sm">
+                                        Portfolio assistant with LSTM predictions, news sentiment and transparent rationales.
+                                    </p>
+                                </div>
+
+                                <Separator />
+
+                                <div className="space-y-1">
+                                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                                        <Boxes className="h-4 w-4" /> SeatSurfer
+                                    </div>
+                                    <p className="text-sm">
+                                        Hybrid workplace booking with AI seat recommendations and admin analytics.
+                                    </p>
                                 </div>
                             </CardContent>
                             <CardFooter className="flex gap-2">
